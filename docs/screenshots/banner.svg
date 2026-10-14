@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Midtrans Pay Experiment Lab">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f2f6b"/>
+      <stop offset="1" stop-color="#2f7fe0"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#59b3ff"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <circle cx="1080" cy="50" r="180" fill="#ffffff" opacity="0.05"/>
+  <circle cx="140" cy="290" r="140" fill="#ffffff" opacity="0.05"/>
+
+  <!-- card icon -->
+  <g transform="translate(90, 90)">
+    <rect x="0" y="0" width="140" height="92" rx="16" fill="#ffffff" opacity="0.12" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+    <rect x="16" y="20" width="44" height="32" rx="6" fill="#59b3ff"/>
+    <rect x="16" y="62" width="108" height="8" rx="4" fill="#ffffff" opacity="0.5"/>
+  </g>
+
+  <text x="280" y="150" font-family="Inter, Segoe UI, sans-serif" font-size="60" font-weight="800" fill="#ffffff">Midtrans Pay</text>
+  <text x="282" y="196" font-family="Inter, Segoe UI, sans-serif" font-size="26" font-weight="600" fill="url(#accent)">Experiment Lab</text>
+  <text x="282" y="238" font-family="Inter, Segoe UI, sans-serif" font-size="17" fill="#c7d7f0">Snap &amp; Core API · QRIS · VA · GoPay · refunds · webhooks · live dashboard</text>
+
+  <g transform="translate(282, 258)">
+    <rect x="0" y="0" width="104" height="26" rx="13" fill="#ffffff" opacity="0.14"/>
+    <text x="52" y="18" font-family="Inter, sans-serif" font-size="13" fill="#eaf2ff" text-anchor="middle">Express 4</text>
+    <rect x="114" y="0" width="120" height="26" rx="13" fill="#ffffff" opacity="0.14"/>
+    <text x="174" y="18" font-family="Inter, sans-serif" font-size="13" fill="#eaf2ff" text-anchor="middle">React 19 + Vite</text>
+    <rect x="244" y="0" width="132" height="26" rx="13" fill="#ffffff" opacity="0.14"/>
+    <text x="310" y="18" font-family="Inter, sans-serif" font-size="13" fill="#eaf2ff" text-anchor="middle">Tailwind v4</text>
+    <rect x="386" y="0" width="128" height="26" rx="13" fill="#ffffff" opacity="0.14"/>
+    <text x="450" y="18" font-family="Inter, sans-serif" font-size="13" fill="#eaf2ff" text-anchor="middle">22 tests</text>
+  </g>
+</svg>

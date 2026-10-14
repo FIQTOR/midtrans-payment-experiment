@@ -1,0 +1,22 @@
+{
+  "name": "midtrans-payment-experiment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Experimental Midtrans payment gateway playground — Express.js backend + React/Vite/Tailwind v4 frontend",
+  "scripts": {
+    "setup": "npm run install:all && node scripts/setup-env.mjs",
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "keygen": "npm --prefix backend run gen-key",
+    "midtrans:ping": "npm --prefix backend run midtrans:ping",
+    "seed": "npm --prefix backend run seed",
+    "test": "npm --prefix backend test",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev": "concurrently -n api,web -c blue,green \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build": "npm --prefix frontend run build",
+    "lint": "npm --prefix frontend run lint"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

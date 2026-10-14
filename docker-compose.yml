@@ -1,0 +1,50 @@
+services:
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: midtrans_payments
+    ports:
+      - '3306:3306'
+    volumes:
+      - midtrans-mysql:/var/lib/mysql
+    healthcheck:
+      test: ['CMD', 'mysqladmin', 'ping', '-h', 'localhost', '-proot']
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  backend:
+    build: ./backend
+    ports:
+      - '4011:4011'
+    environment:
+      NODE_ENV: production
+      PORT: '4011'
+      CORS_ORIGIN: http://localhost:8081
+      MIDTRANS_MOCK_MODE: '${MIDTRANS_MOCK_MODE:-true}'
+      MIDTRANS_SERVER_KEY: '${MIDTRANS_SERVER_KEY:-SB-Mid-server-xxxxxxxxxxxxxxxxxxxx}'
+      MIDTRANS_CLIENT_KEY: '${MIDTRANS_CLIENT_KEY:-SB-Mid-client-xxxxxxxxxxxxxxxxxxxx}'
+      MIDTRANS_BASE_URL: '${MIDTRANS_BASE_URL:-https://api.sandbox.midtrans.com}'
+      MIDTRANS_SNAP_BASE_URL: '${MIDTRANS_SNAP_BASE_URL:-https://app.sandbox.midtrans.com}'
+      PUBLIC_BASE_URL: '${PUBLIC_BASE_URL:-http://localhost:4011}'
+      DB_ENABLED: 'true'
+      DB_DIALECT: mysql
+      DB_HOST: mysql
+      DB_PORT: '3306'
+      DB_NAME: midtrans_payments
+      DB_USER: root
+      DB_PASSWORD: root
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  frontend:
+    build: ./frontend
+    ports:
+      - '8081:80'
+    depends_on:
+      - backend
+
+volumes:
+  midtrans-mysql:

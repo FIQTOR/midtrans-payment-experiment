@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-label="Midtrans Pay dashboard">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d2340"/>
+      <stop offset="1" stop-color="#070d19"/>
+    </linearGradient>
+    <linearGradient id="pay" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f66c4"/>
+      <stop offset="1" stop-color="#0f2f6b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="760" fill="url(#bg)"/>
+  <rect width="1280" height="48" fill="#0a1730"/>
+  <circle cx="20" cy="24" r="6" fill="#ff5f57"/><circle cx="40" cy="24" r="6" fill="#febc2e"/><circle cx="60" cy="24" r="6" fill="#28c840"/>
+  <rect x="90" y="12" width="420" height="24" rx="12" fill="#132a4d"/>
+  <text x="110" y="29" font-family="Inter, sans-serif" font-size="12" fill="#7f9ac4">localhost:5175</text>
+
+  <!-- sidebar -->
+  <rect x="0" y="48" width="240" height="712" fill="#0b1a30"/>
+  <rect x="24" y="76" width="40" height="40" rx="12" fill="#2f7fe0" opacity="0.25" stroke="#59b3ff" stroke-opacity="0.5"/>
+  <text x="44" y="102" font-family="Inter, sans-serif" font-size="20" fill="#59b3ff" text-anchor="middle">M</text>
+  <text x="78" y="94" font-family="Inter, sans-serif" font-size="15" font-weight="700" fill="#ffffff">Midtrans Pay</text>
+  <text x="78" y="112" font-family="Inter, sans-serif" font-size="12" fill="#7f9ac4">Experiment Lab</text>
+
+  <rect x="16" y="150" width="208" height="40" rx="10" fill="#2f7fe0" opacity="0.25" stroke="#59b3ff" stroke-opacity="0.4"/>
+  <text x="44" y="175" font-family="Inter, sans-serif" font-size="14" fill="#ffffff">Dashboard</text>
+  <text x="44" y="227" font-family="Inter, sans-serif" font-size="14" fill="#c7d7f0">Create Payment</text>
+  <text x="44" y="279" font-family="Inter, sans-serif" font-size="14" fill="#c7d7f0">Webhook Tester</text>
+
+  <rect x="16" y="648" width="208" height="88" rx="12" fill="#ffffff" opacity="0.05"/>
+  <circle cx="34" cy="672" r="5" fill="#34d399"/>
+  <text x="48" y="677" font-family="Inter, sans-serif" font-size="13" fill="#c7d7f0">Backend online</text>
+  <text x="32" y="702" font-family="Inter, sans-serif" font-size="12" fill="#7f9ac4">mode: <tspan fill="#ffffff">mock</tspan></text>
+  <text x="32" y="722" font-family="Inter, sans-serif" font-size="12" fill="#7f9ac4">flavor: <tspan fill="#ffffff">snap</tspan></text>
+
+  <!-- header -->
+  <text x="272" y="100" font-family="Inter, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Dashboard</text>
+  <text x="272" y="124" font-family="Inter, sans-serif" font-size="13" fill="#7f9ac4">Running in mock mode — no live credentials required.</text>
+  <rect x="1150" y="82" width="96" height="34" rx="9" fill="#ffffff" opacity="0.06" stroke="#ffffff" stroke-opacity="0.12"/>
+  <text x="1198" y="104" font-family="Inter, sans-serif" font-size="13" fill="#c7d7f0" text-anchor="middle">Refresh</text>
+
+  <!-- stat cards -->
+  <g font-family="Inter, sans-serif">
+    <rect x="272" y="150" width="228" height="96" rx="16" fill="#ffffff" opacity="0.05"/>
+    <text x="292" y="178" font-size="12" fill="#7f9ac4">PAID</text>
+    <text x="292" y="220" font-size="30" font-weight="800" fill="#ffffff">1</text>
+    <circle cx="472" cy="170" r="7" fill="#34d399"/>
+
+    <rect x="516" y="150" width="228" height="96" rx="16" fill="#ffffff" opacity="0.05"/>
+    <text x="536" y="178" font-size="12" fill="#7f9ac4">PENDING</text>
+    <text x="536" y="220" font-size="30" font-weight="800" fill="#ffffff">2</text>
+    <circle cx="716" cy="170" r="7" fill="#fbbf24"/>
+
+    <rect x="760" y="150" width="228" height="96" rx="16" fill="#ffffff" opacity="0.05"/>
+    <text x="780" y="178" font-size="12" fill="#7f9ac4">FAILED</text>
+    <text x="780" y="220" font-size="30" font-weight="800" fill="#ffffff">1</text>
+    <circle cx="960" cy="170" r="7" fill="#fb7185"/>
+
+    <rect x="1004" y="150" width="242" height="96" rx="16" fill="#ffffff" opacity="0.05"/>
+    <text x="1024" y="178" font-size="12" fill="#7f9ac4">REFUNDED</text>
+    <text x="1024" y="220" font-size="30" font-weight="800" fill="#ffffff">1</text>
+    <circle cx="1224" cy="170" r="7" fill="#38bdf8"/>
+  </g>
+
+  <!-- gross settled -->
+  <rect x="272" y="262" width="974" height="96" rx="16" fill="url(#pay)"/>
+  <text x="296" y="294" font-family="Inter, sans-serif" font-size="12" fill="#c7d7f0">GROSS SETTLED</text>
+  <text x="296" y="336" font-family="Inter, sans-serif" font-size="30" font-weight="800" fill="#ffffff">Rp 125.000</text>
+  <text x="620" y="336" font-family="Inter, sans-serif" font-size="13" fill="#c7d7f0">Pending volume: Rp 1.074.000</text>
+
+  <!-- transactions table -->
+  <rect x="272" y="382" width="700" height="330" rx="16" fill="#ffffff" opacity="0.04" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="296" y="416" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Transactions</text>
+  <rect x="700" y="396" width="150" height="30" rx="8" fill="#0d1f38"/>
+  <text x="716" y="415" font-family="Inter, sans-serif" font-size="12" fill="#7f9ac4">Search order id…</text>
+  <rect x="862" y="396" width="94" height="30" rx="8" fill="#0d1f38"/>
+  <text x="909" y="415" font-family="Inter, sans-serif" font-size="12" fill="#7f9ac4" text-anchor="middle">All status ▾</text>
+
+  <line x1="296" y1="442" x2="948" y2="442" stroke="#ffffff" stroke-opacity="0.12"/>
+  <g font-family="Inter, sans-serif" font-size="12" fill="#7f9ac4">
+    <text x="296" y="436">ORDER ID</text><text x="560" y="436">CHANNEL</text><text x="680" y="436">AMOUNT</text><text x="800" y="436">STATUS</text>
+  </g>
+
+  <g font-family="Inter, sans-serif" font-size="13">
+    <text x="296" y="476" fill="#c7d7f0">ORDER-9CJZ8AVKFR</text><text x="560" y="476" fill="#c7d7f0">qris</text><text x="680" y="476" fill="#ffffff">Rp 49.000</text>
+    <rect x="800" y="462" width="72" height="22" rx="11" fill="#38bdf8" opacity="0.18"/><text x="836" y="477" fill="#7dd3fc" text-anchor="middle">REFUNDED</text>
+
+    <text x="296" y="520" fill="#c7d7f0">ORDER-CQJVE4VUI7</text><text x="560" y="520" fill="#c7d7f0">bank_transfer</text><text x="680" y="520" fill="#ffffff">Rp 125.000</text>
+    <rect x="800" y="506" width="56" height="22" rx="11" fill="#34d399" opacity="0.18"/><text x="828" y="521" fill="#6ee7b7" text-anchor="middle">PAID</text>
+
+    <text x="296" y="564" fill="#c7d7f0">ORDER-BDIXKON-PJ</text><text x="560" y="564" fill="#c7d7f0">gopay</text><text x="680" y="564" fill="#ffffff">Rp 250.000</text>
+    <rect x="800" y="550" width="72" height="22" rx="11" fill="#fbbf24" opacity="0.18"/><text x="836" y="565" fill="#fcd34d" text-anchor="middle">PENDING</text>
+
+    <text x="296" y="608" fill="#c7d7f0">ORDER-LKW3ENEIYY</text><text x="560" y="608" fill="#c7d7f0">credit_card</text><text x="680" y="608" fill="#ffffff">Rp 999.000</text>
+    <rect x="800" y="594" width="60" height="22" rx="11" fill="#fb7185" opacity="0.18"/><text x="830" y="609" fill="#fda4af" text-anchor="middle">FAILED</text>
+
+    <text x="296" y="652" fill="#c7d7f0">ORDER-NJWJIST7JQ</text><text x="560" y="652" fill="#c7d7f0">bank_transfer</text><text x="680" y="652" fill="#ffffff">Rp 75.000</text>
+    <rect x="800" y="638" width="72" height="22" rx="11" fill="#fbbf24" opacity="0.18"/><text x="836" y="653" fill="#fcd34d" text-anchor="middle">PENDING</text>
+  </g>
+
+  <!-- create payment form -->
+  <rect x="992" y="382" width="254" height="330" rx="16" fill="#ffffff" opacity="0.05" stroke="#ffffff" stroke-opacity="0.08"/>
+  <text x="1016" y="416" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Create payment</text>
+
+  <text x="1016" y="446" font-family="Inter, sans-serif" font-size="11" fill="#7f9ac4">AMOUNT (IDR)</text>
+  <rect x="1016" y="454" width="206" height="34" rx="8" fill="#0d1f38"/>
+  <text x="1030" y="476" font-family="Inter, sans-serif" font-size="13" fill="#ffffff">49000</text>
+
+  <text x="1016" y="512" font-family="Inter, sans-serif" font-size="11" fill="#7f9ac4">API FLAVOR</text>
+  <rect x="1016" y="520" width="100" height="32" rx="8" fill="#2f7fe0" opacity="0.3" stroke="#59b3ff" stroke-opacity="0.5"/>
+  <text x="1066" y="541" font-family="Inter, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle">Snap</text>
+  <rect x="1122" y="520" width="100" height="32" rx="8" fill="#0d1f38"/>
+  <text x="1172" y="541" font-family="Inter, sans-serif" font-size="12" fill="#c7d7f0" text-anchor="middle">Core API</text>
+
+  <text x="1016" y="578" font-family="Inter, sans-serif" font-size="11" fill="#7f9ac4">CHANNEL</text>
+  <g font-family="Inter, sans-serif" font-size="11" fill="#7f9ac4">
+    <rect x="1016" y="586" width="98" height="28" rx="7" fill="#0d1f38"/><text x="1065" y="604" text-anchor="middle">QRIS</text>
+    <rect x="1124" y="586" width="98" height="28" rx="7" fill="#0d1f38"/><text x="1173" y="604" text-anchor="middle">BCA VA</text>
+    <rect x="1016" y="620" width="98" height="28" rx="7" fill="#0d1f38"/><text x="1065" y="638" text-anchor="middle">GoPay</text>
+    <rect x="1124" y="620" width="98" height="28" rx="7" fill="#0d1f38"/><text x="1173" y="638" text-anchor="middle">Card</text>
+  </g>
+  <rect x="1016" y="660" width="206" height="38" rx="9" fill="#1f66c4"/>
+  <text x="1119" y="684" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">Create payment</text>
+</svg>

@@ -1,0 +1,44 @@
+{
+  "name": "midtrans-payment-backend",
+  "version": "1.0.0",
+  "description": "Experimental Midtrans payment gateway integration backend (Express.js)",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "gen-key": "node src/utils/genKeyPair.js",
+    "midtrans:ping": "node src/scripts/midtransPing.js",
+    "seed": "node tools/seed-demo.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "midtrans",
+    "snap",
+    "payment",
+    "qris",
+    "va",
+    "express"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.24.5",
+    "nanoid": "^5.0.9",
+    "sequelize": "^6.37.8",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "qrcode": "^1.5.4",
+    "sqlite3": "^6.0.1",
+    "supertest": "^7.3.1",
+    "vitest": "^3.2.4"
+  }
+}

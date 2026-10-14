@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+
+# builds
+dist/
+build/
+
+# logs
+*.log
+npm-debug.log*
+
+# env / secrets — NEVER commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+backend/certs/*.pem
+
+# editor / OS
+.DS_Store
+.idea/
+.vscode/
+coverage/
+.vite/
